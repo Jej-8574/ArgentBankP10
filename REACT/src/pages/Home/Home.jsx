@@ -3,18 +3,23 @@ import Footer from '../../components/footer/Footer'
 import FeatureItem from '../../components/FeatureItem/FeatureItem'
 import Hero from '../../components/Hero/Hero'
 import './Home.css'
+import iconChat from '/img/icon-chat.png'
+import iconMoney from '/img/icon-money.png'
+import iconSecurity from '/img/icon-security.png'
+import bankTree from '/img/bank-tree.jpeg'
+
 function Home() {
   return (
     <>
       <Header />
       <main>
-        <Hero />
+        <Hero backgroundImage={bankTree} />
 
         <section className="features">
           <h2 className="sr-only">Features</h2>
 
           <FeatureItem
-            icon="/img/icon-chat.png"
+            icon={iconChat}
             alt="Chat Icon"
             title="You are our #1 priority"
           >
@@ -23,7 +28,7 @@ function Home() {
           </FeatureItem>
 
           <FeatureItem
-            icon="/img/icon-money.png"
+            icon={iconMoney}
             alt="Money Icon"
             title="More savings means higher rates"
           >
@@ -31,7 +36,7 @@ function Home() {
           </FeatureItem>
 
           <FeatureItem
-            icon="/img/icon-security.png"
+            icon={iconSecurity}
             alt="Security Icon"
             title="Security you can trust"
           >
